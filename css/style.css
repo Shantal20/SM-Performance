@@ -1,0 +1,43 @@
+
+	
+	
+
+
+.nav-link{
+	width:100%;
+	margin:auto;
+	padding:50px 0;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+}
+
+
+.nav-link ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+	
+}
+.nav-link ul li a{
+	text-decoration:none;
+	color:red;
+	text-transform:uppercase;
+}
+
+.nav-link ul li :: after{
+	content:'';
+	height: 3px ;
+	width:0;
+	background:red;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 105s;
+	
+}
+.nav-link ul li: hover :: after{
+	width:100%;
+}
+	
